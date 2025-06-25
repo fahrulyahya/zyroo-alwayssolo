@@ -1,0 +1,283 @@
+<!-- 
+Hi I'm RilzX7 / RX7 
+Creator Of SpectraNoise 
+© Created By RX7
+© 2025 🍁 ( RilzX7 )
+
+*Jangan Hapus Credits Diatas*!
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RX7 Modders</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #2e026d, #7c3aed);
+      color: white;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(15px);
+      padding: 2rem;
+      border-radius: 20px;
+      max-width: 420px;
+      margin: 2rem auto;
+      text-align: center;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .profile-img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .typing-text {
+      font-size: 1rem;
+      color: #e0e0e0;
+      margin-bottom: 1.5rem;
+      min-height: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      margin-top: 1.6rem;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+      color: #ddd;
+    }
+
+    .section-content {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-bottom: 1rem;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .skill-icon {
+      width: 40px;
+      height: 40px;
+      margin: 0.4rem;
+      filter: drop-shadow(0 0 3px rgba(255,255,255,0.3));
+      transition: transform 0.3s ease;
+    }
+
+    .skill-icon:hover {
+      transform: scale(1.2);
+    }
+
+    .code-preview {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      text-align: left;
+      padding: 1rem;
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #a5f3fc;
+      margin: 1rem 0;
+    }
+
+    .btn, .next-button, .back-button {
+      background: linear-gradient(135deg, #a855f7, #6366f1);
+      color: white;
+      font-weight: 600;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 0.95rem;
+      border-radius: 40px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: inline-block;
+      margin-top: 0.7rem;
+      text-decoration: none;
+    }
+
+    .btn:hover, .next-button:hover, .back-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.9);
+    }
+
+    .links {
+      margin-top: 1.5rem;
+    }
+
+    .links a {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      margin: 0.4rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #ccc;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .qris-img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-top: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    .payment-method {
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="home-page">
+    <img src="https://files.catbox.moe/mg1ynp.jpg" alt="Profile" class="profile-img">
+    <h1>RX7 Modders</h1>
+    <div class="typing-text" id="typing"></div>
+
+    <div class="section-title">About</div>
+    <div class="section-content">Hola, I'm RX7, seorang yang sedang belajar dan bercita-cita menjadi seorang programmer.
+Saya suka membangun hal-hal baru, terutama yang berkaitan dengan teknologi, script, dan bot..
+    </div>
+
+    <div class="section-title">SKILLS</div>
+    <div class="skills">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" class="skill-icon">
+    </div>
+
+    <div class="section-title">Quote</div>
+    <div class="section-content">“Don’t downgrade your dream just to fit your reality”<br><i>Jangan turunkan mimpimu hanya karena realita saat ini.</i></div>
+
+    <div class="section-title">Code</div>
+    <div class="code-preview">
+      const Rx7 = () => {<br>
+      &nbsp;&nbsp;return "Hi I'm Rx7 Modders";<br>
+      }<br><br>
+      console.log(Rx7());
+    </div>
+
+    <div class="links">
+      <a href="https://wa.me/6282282345392" target="_blank">WhatsApp</a>
+      <a href="https://youtube.com/@RILLYZY" target="_blank">YouTube</a>
+      <a href="https://github.com/RILLYZY" target="_blank">GitHub</a>
+    </div>
+
+    <button class="next-button" onclick="showPage('payment-page')">Payment</button>
+
+    <div class="footer">© Created By RilzX7</div>
+  </div>
+
+
+  <div class="container hidden" id="payment-page">
+    <h1>Payment</h1>
+
+    <div class="section-content">All Payment:</div>
+
+    <div class="payment-method">
+      <img src="https://files.catbox.moe/mg1ynp.jpg" alt="DANA" width="90">
+      <p>DANA - <span id="gopay-number">62888888888</span></p>
+      <button class="btn" onclick="copyText('62888888888')">Copy</button>
+    </div>
+
+    <div class="payment-method">
+      <img src="https://files.catbox.moe/mg1ynp.jpg" alt="OVO" width="90">
+      <p>OVO - <span id="ovo-number">62888888888</span></p>
+      <button class="btn" onclick="copyText('62888888888')">Copy</button>
+    </div>
+
+    <div class="payment-method">
+      <img src="https://files.catbox.moe/mg1ynp.jpg" alt="GoPay" width="90">
+      <p>GoPay - <span id="gopay-number">62888888888</span></p>
+      <button class="btn" onclick="copyText('62888888888')">Copy</button>
+    </div>
+
+    <h2 style="margin-top: 1rem;">QRIS</h2>
+    <img src="https://files.catbox.moe/mg1ynp.jpg" alt="QRIS" class="qris-img">
+
+    <button class="back-button" onclick="showPage('home-page')">← Back to Home</button>
+  </div>
+
+  <script>
+    const typing = document.getElementById("typing");
+    const texts = ["Web Developer", "Bot Developer", "Script Creator"];
+    let index = 0, char = 0;
+
+    function type() {
+      if (char < texts[index].length) {
+        typing.textContent += texts[index].charAt(char++);
+        setTimeout(type, 100);
+      } else {
+        setTimeout(() => {
+          typing.textContent = "";
+          index = (index + 1) % texts.length;
+          char = 0;
+          type();
+        }, 1000);
+      }
+    }
+
+    function copyText(text) {
+      navigator.clipboard.writeText(text)
+        .then(() => alert("Nomor disalin: " + text))
+        .catch(err => alert("Gagal menyalin: " + err));
+    }
+
+    function showPage(pageId) {
+      document.getElementById("home-page").classList.add("hidden");
+      document.getElementById("payment-page").classList.add("hidden");
+      document.getElementById(pageId).classList.remove("hidden");
+    }
+
+    window.onload = type;
+  </script>
+</body>
+</html>
